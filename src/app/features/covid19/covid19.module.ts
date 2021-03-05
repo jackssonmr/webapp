@@ -11,7 +11,8 @@ import {
   DxFileUploaderModule,
   DxPopupModule,
   DxButtonModule,
-  DxToolbarModule
+  DxToolbarModule,
+  DxPieChartModule
 } from 'devextreme-angular';
 
 import { Covid19RoutingModule } from './covid19-routing.module';
@@ -44,6 +45,7 @@ import { PersonsContainerComponent } from './containers/persons-container/person
     DxPopupModule,
     DxButtonModule,
     DxToolbarModule,
+    DxPieChartModule,
     Covid19RoutingModule
   ],
   providers: [

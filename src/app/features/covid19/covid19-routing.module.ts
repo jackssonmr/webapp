@@ -10,7 +10,7 @@ const routes: Routes = [
     component: PersonsViewComponent //,
     // canActivate: [ AuthGuardService ]
   }, {
-    path: 'persona/:id',
+    path: '',
     component: PersonViewComponent //,
     // canActivate: [ AuthGuardService ]
   }

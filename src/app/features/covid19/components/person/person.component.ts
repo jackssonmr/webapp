@@ -40,6 +40,7 @@ export class PersonComponent implements OnInit {
   agregarPersona(e: any) {
     console.log(this.nuevaPersona);
     this.onFilaAgregada.emit(this.nuevaPersona);
+    this.nuevaPersona = new PersonaViewModel();
   }
 
 }

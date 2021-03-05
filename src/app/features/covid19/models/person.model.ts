@@ -17,6 +17,11 @@
  export class PersonaViewModel {
    intId?: number;
    strNumeroDocumento?: string;
-   decTemperatura?: number;
+   decTemperatura: number = 0;
    dtFechaCreacion?: string;
+}
+
+export class AreaViewModel {
+  strNombre: string = '';
+  strCantidad: number = 0;
 }

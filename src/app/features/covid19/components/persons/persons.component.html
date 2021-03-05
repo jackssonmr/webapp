@@ -1,4 +1,27 @@
 <div id="form-container">
+
+  <dx-pie-chart
+    id="pie"
+    title="Clasificación Tamizaje"
+    palette="bright"
+    [dataSource]="clasificados">
+    <dxo-legend
+        horizontalAlignment="center"
+        verticalAlignment="bottom"></dxo-legend>
+    <dxo-export [enabled]="true"></dxo-export>
+    <dxi-series
+        argumentField="strNombre"
+        valueField="strCantidad">
+        <dxo-label
+            [visible]="true"
+            [customizeText]="customizeLabel">
+            <dxo-connector
+                [visible]="true"
+                [width]="0.5"></dxo-connector>
+        </dxo-label>
+    </dxi-series>
+</dx-pie-chart>
+
   <dx-data-grid id="gridContainer"
               [dataSource]="coleccionPersonas"
               [showBorders]="true"
